@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.title = "Student";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+@section SidebarItem {
+    <li>
+        <a href="/Student/StudentDetail">
+            Student detail
+        </a>
+    </li>
+
+    <li>
+        <a href="/Student/StudentList">
+            Student List
+        </a>
+    </li>
+}
+
+
+@{
+    ViewBag.galleryTitle = "Student gallery";
+    ViewBag.gallery = new string[] {
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMPiGDt4v2dgX2B9okbLOORk4g_HOjTuUS9Q&usqp=CAU",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE2qhOAQ-7oTqTa4usM3czIjRwngzXm3akbA&usqp=CAU",
+    };
+
+    Html.RenderPartial("GalleryPhoto");
+}

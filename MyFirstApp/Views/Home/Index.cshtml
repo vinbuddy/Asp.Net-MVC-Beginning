@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.title = "Home";
+    //Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+@{ 
+    ViewBag.galleryTitle = "Home gallery";
+    ViewBag.gallery = new string[] {
+        "https://res.cloudinary.com/daily-now/image/upload/f_auto,q_auto/v1/posts/9e0132bc6ae68cce7a442c131596bad5?_a=AQADKdt",
+        "https://res.cloudinary.com/daily-now/image/upload/f_auto,q_auto/v1/posts/fa8db92e0f28bcef057d3a6818ac203f?_a=AQADKdt",
+        "https://res.cloudinary.com/daily-now/image/upload/f_auto,q_auto/v1/posts/0f5195f5204fabc8909141a2c3683ab7?_a=AQADKdt",
+        "https://res.cloudinary.com/daily-now/image/upload/f_auto,q_auto/v1/posts/b027c55ea12a561ef6fb056e07b48d63?_a=AQADKdt",
+        "https://res.cloudinary.com/daily-now/image/upload/f_auto,q_auto/v1/posts/7fc1fc96b56c964ba52f0e372595ebd1?_a=AQADKdt"
+    };
+
+    Html.RenderPartial("GalleryPhoto");
+}

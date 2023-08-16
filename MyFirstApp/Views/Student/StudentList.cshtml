@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+@using MyFirstApp.Models
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>StudentList</title>
+</head>
+<body>
+    <div>
+        <ul>
+            @foreach (Student student in ViewBag.studentList)
+            {
+            <li>
+                <span>@student.id - </span>
+                <span>@student.name - </span>
+                <span>@student.age </span>
+
+            </li>
+            }
+        </ul>
+    </div>
+</body>
+</html>

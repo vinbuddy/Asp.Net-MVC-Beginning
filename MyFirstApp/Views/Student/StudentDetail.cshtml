@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>StudentDetail</title>
+    <meta charset="utf-8" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container"> 
+        <table class="table m-auto w-25">
+            <tr>
+                <td>Id</td>
+                <td>
+                    @ViewBag.id
+            </td>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td>@ViewBag.name</td>
+        </tr>
+        <tr>
+            <td>Age</td>
+            <td>@ViewBag.age</td>
+        </tr>
+        <tr>
+            <td>GPA</td>
+            <td>@ViewData["GPA"]</td>
+        </tr>
+        </table>
+    </div>
+</body>
+</html>
